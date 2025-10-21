@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Înregistrare Animale</title>
+    <link rel="stylesheet" href="stil-formular.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Formular de înregistrare animale</h1> 
+  
+    <p>Completează formularul de mai jos pentru a înregistra animalul tău la clinica veterinară.</p>
+
+    <div class="form-container">
+        
+        
+        <form action="#" method="post">
+            
+            <div class="form-grup">
+                <label for="nume-stapan">Nume stăpân:</label>
+                <input type="text" id="nume-stapan" name="nume-stapan" required>
+            </div>
+
+            <div class="form-grup">
+                <label for="telefon">Telefon:</label>
+                <input type="text" id="telefon" name="telefon" required>
+            </div>
+
+            <div class="form-grup">
+                <label for="nume-animal">Nume animal:</label>
+                <input type="text" id="nume-animal" name="nume-animal" required>
+            </div>
+
+            <div class="form-grup">
+                <label for="specie">Specie:</label>
+                <select id="specie" name="specie">
+                    <option value="caine">Câine</option>
+                    <option value="pisica">Pisică</option>
+                    <option value="iepure">Iepure</option>
+                    <option value="altul">Altul</option>
+                </select>
+            </div>
+
+            <fieldset>
+                <legend>Sexul animalului</legend>
+                <input type="radio" id="mascul" name="sex" value="mascul">
+                <label for="mascul">Mascul</label>
+                <input type="radio" id="femela" name="sex" value="femela">
+                <label for="femela">Femelă</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Servicii dorite</legend>
+                <input type="checkbox" id="vaccinare" name="servicii" value="vaccinare">
+                <label for="vaccinare">Vaccinare</label>
+                <input type="checkbox" id="deparazitare" name="servicii" value="deparazitare">
+                <label for="deparazitare">Deparazitare</label>
+                <input type="checkbox" id="consult" name="servicii" value="consult">
+                <label for="consult">Consult</label>
+            </fieldset>
+            
+            <div class="form-grup">
+                <label for="observatii">Observaţii:</label>
+                <textarea id="observatii" name="observatii" rows="4"></textarea>
+            </div>
+
+            <div class="form-butoane">
+                <button type="submit" class="btn-submit">Trimite</button> 
+                <button type="reset" class="btn-reset">Resetează</button> 
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>

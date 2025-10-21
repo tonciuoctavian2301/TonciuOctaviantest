@@ -1,0 +1,62 @@
+/* Stiluri generale pentru pagină */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f9f4; /* Un fundal verde foarte deschis, ca în exemplu */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Cerința d: Titlul centrat  */
+h1 {
+    text-align: center;
+    color: #2E7D32; /* O nuanță de verde ca în exemplu */
+}
+
+/* Cerința d: Imaginea centrată, colțuri rotunjite și umbră  */
+.img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px; /* Colțuri rotunjite */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Umbră discretă */
+}
+
+/* Stiluri pentru tabel */
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse; /* Asigură borduri simple */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    /* Cerința d: Borduri vizibile [cite: 293] */
+    border: 1px solid #ddd; 
+}
+
+/* Cerința d: Antetul tabelului cu fundal diferit [cite: 294] */
+thead th {
+    background-color: #A5D6A7; /* Verde deschis pentru antet */
+    color: #1B5E20;
+}
+
+/* Cerința d: Culori alternative pe rânduri [cite: 293] */
+tbody tr:nth-child(even) {
+    background-color: #E8F5E9; /* Verde și mai deschis pentru rândurile pare */
+}
+
+/* Cerința d: Fundalul se schimbă la trecerea mouse-ului [cite: 295] */
+tbody tr:hover {
+    background-color: #C8E6C9; /* Un verde puțin mai închis la hover */
+}
+
+/* Stil pentru paragraful final [cite: 297] */
+p {
+    text-align: center;
+    font-style: italic;
+    color: #555;
+    margin-top: 20px;
+}

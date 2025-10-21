@@ -1,0 +1,113 @@
+/* Stiluri generale pentru pagină */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFF3E0; /* Fundal portocaliu deschis, ca în exemplu */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Titlul și paragraful introductiv */
+h1 {
+    text-align: center;
+    color: #E65100; /* Portocaliu închis */
+}
+p {
+    text-align: center;
+    color: #4E342E;
+    margin-bottom: 20px;
+}
+
+/* Cerința e: Formular centrat, fundal alb, umbră  */
+.form-container {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Gruparea elementelor de formular pentru spațiere */
+.form-grup, fieldset {
+    /* Cerința e: Margin consistent  */
+    margin-bottom: 15px; 
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+    color: #E65100;
+    padding: 0 5px;
+}
+
+/* Stil pentru etichete (label) */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Stil pentru câmpurile de input, select și textarea */
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    /* Cerința e: Padding consistent  */
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Asigură că padding-ul nu afectează lățimea */
+    transition: border-color 0.3s;
+}
+
+/* Cerința e: Culoarea bordurii se schimbă la focus  */
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #F57C00; /* Portocaliu la selectare */
+    outline: none; /* Elimină conturul albastru implicit */
+}
+
+/* Stil pentru butoanele radio și checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Așezarea butoanelor */
+.form-butoane {
+    display: flex;
+    justify-content: space-between; /* Așază butoanele la capete */
+    margin-top: 20px;
+}
+
+/* Stil comun pentru butoane */
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+/* Cerința e: Butoane colorate diferit  */
+.btn-submit {
+    background-color: #F57C00; /* Portocaliu */
+}
+
+.btn-reset {
+    background-color: #757575; /* Gri */
+}
+
+/* Cerința e: Efect de hover  */
+button:hover {
+    opacity: 0.85;
+}
